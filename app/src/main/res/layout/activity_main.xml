@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.lzd.cateringgroupbuy.Login.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/ID"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp">
+
+        <EditText
+            android:id="@+id/logid"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textColor="#000000"
+            android:inputType="phone"
+            android:textColorHint="#000000"
+            android:textAlignment="center"
+            android:hint="请输入手机号码"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/PSW"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ID"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/logpsw"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:hint="请输入密码"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/PSW"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/registerbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:text="新用户注册 >>"
+            android:textSize="17sp"/>
+        <Button
+            android:id="@+id/logBtn"
+            android:layout_width="250dp"
+            android:layout_below="@id/registerbtn"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#eeeeee"
+            android:textColor="#000000"
+            android:text="登 录"
+            android:textSize="25sp"/>
+        <!--<Button
+            android:id="@+id/register"
+            android:layout_toRightOf="@id/login"
+            android:layout_marginLeft="30dp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="注 册"
+            android:textSize="25sp"/>-->
+    </RelativeLayout>
+
+</RelativeLayout>

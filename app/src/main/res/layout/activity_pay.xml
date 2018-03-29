@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#eee">
+
+        <ImageView
+            android:id="@+id/back_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:id="@+id/pay_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:text="杨铭宇黄焖鸡米饭"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/paytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:textSize="28sp"
+            android:text="消费总额："/>
+
+        <EditText
+            android:id="@+id/pay_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:hint="询问服务员后输入"
+            android:textColorHint="#515151"
+            android:textSize="23sp"
+            android:textAlignment="textEnd"
+            android:inputType="number"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/paytext"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#eee"
+        android:layout_marginTop="5dp"
+        >
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:background="#ffa500"
+            android:text="确认买单"
+            android:textSize="30sp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

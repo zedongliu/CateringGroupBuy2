@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">我团</string>
+    <string name="trouble">1.ListView过长，滑动闪退。2.Fragment切换时，覆盖导致点击无效</string>
+</resources>
